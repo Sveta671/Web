@@ -1,0 +1,14 @@
+
+
+div{
+    color: purple
+}
+
+.site-name{
+    color: rgb(236, 122, 185);
+    font-weight: 900;
+}
+
+li + li{
+    color: rgb(236, 122, 185);;
+}
