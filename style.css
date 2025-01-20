@@ -1,0 +1,178 @@
+body {
+  background: linear-gradient(to bottom, white, rgb(255, 255, 255), rgb(211, 209, 209), rgb(177, 177, 177), rgb(105, 105, 105), black);
+  min-height: 100vh;
+}
+
+
+.site-name{
+    font-family: 'Grenze';
+    color: black;
+    font-weight: 800;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+p{
+    font-weight: 1000;
+    font-family: 'Grenze';
+    color: #000;
+}
+
+
+.site-name{
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    position: sticky;
+    top: 0;
+    background-color: #ffffff;
+}
+
+.search {
+  display: flex;
+  align-items: center; 
+  border: 2px solid #ffffff; 
+  border-radius: 25px; 
+  padding: 5px;
+  background-color: #969696; 
+  max-width: 400px; 
+}
+
+.search-input {
+  flex: 1; 
+  border: none; 
+  padding: 8px;
+  font-size: 16px;
+  background-color: transparent; 
+  color: #111111;
+}
+
+.search-input:focus {
+  outline: none; 
+}
+
+
+.search-button {
+  background-color: #000000; 
+  color: white; 
+  border: none; 
+  padding: 8px 15px; 
+  border-radius: 20px; 
+  cursor: pointer; 
+  font-size: 16px;
+}
+
+.search-button:hover {
+    background-color: #777777; 
+}
+
+
+.search-center {
+  justify-self: center; 
+}
+
+
+
+.nav-list {
+  list-style: none; /* Убираем маркеры списка */
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Выравниваем по центру горизонтально */
+  padding: 20px 0;
+  display: flex; /* Делаем список flex-контейнером */
+    gap: 80px; /* Отступы между элементами */
+}
+
+.nav-item {
+  position: sticky; /* Для позиционирования псевдоэлемента */
+}
+
+.nav-item a {
+  text-decoration: none; /* Убираем подчеркивание ссылок */
+  color: #333; /* Цвет текста */
+  font-weight: 700; /* Полужирный шрифт */
+  padding: 10px 0;
+  transition: color 0.3s ease;
+  display: block; /* Чтобы анимация работала по всей ширине */
+}
+
+
+.nav-item a:hover {
+    color: #8d8d8d; /* Изменяем цвет текста при наведении */
+}
+
+/*Анимация подчеркивания*/
+.nav-item a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+    transform: scaleX(0); /* Начальное состояние, подчеркивания нет */
+  transform-origin: left center;
+  transition: transform 0.3s ease;
+}
+
+.nav-item a:hover::before {
+  transform: scaleX(1); /* Подчеркивание на всю длину при наведении */
+}
+
+
+/* Анимация изменения размера */
+.nav-item a {
+    transition: all 0.3s ease;
+}
+
+.nav-item a:hover {
+    transform: scale(1.1);
+}
+
+.ivideo-container {
+  border-radius: 50px;
+}
+
+h1{
+  padding: 0;
+  margin: 0;
+  justify-content: center; /* Выравниваем по центру горизонтально */
+  padding: 30px 0;
+  color: #000;
+}
+
+h1:hover {
+  color: #8d8d8d; /* Изменяем цвет текста при наведении */
+}
+
+
+h2{
+  padding: 0;
+  margin: 0;
+  padding: 30px 0;
+  color: #000;
+}
+
+
+.books_list{
+  display: flex;
+  flex-direction: row; /* Расположение в виде СТРОКИ */
+  flex-wrap: wrap; /* Если недостаточно места, то объект (книга) переносится на следующую строку (вниз) */
+}
+
+.book{
+  display: flex;
+  flex-direction: column; /* Расположение в виде колонки */
+  gap: 20px; /* Расстояние между картинкой и текстом под ней */
+}
+
+.info1{
+  display: flex;
+  flex-direction: row; /* Расположение в виде СТРОКИ */
+  gap: 20px;  /* Расстояние между картинкой и текстом СПРАВА */
+}
+
+.books_list img {
+  width: 200px;   /* Задаём ширину */
+  height: 325px;  /* Задаём высоту */
+}
