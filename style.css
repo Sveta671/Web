@@ -168,11 +168,121 @@ h2{
 
 .info1{
   display: flex;
-  flex-direction: row; /* Расположение в виде СТРОКИ */
-  gap: 20px;  /* Расстояние между картинкой и текстом СПРАВА */
+  flex-direction: row; 
+  gap: 20px; 
 }
 
 .books_list img {
-  width: 200px;   /* Задаём ширину */
-  height: 325px;  /* Задаём высоту */
+  width: 200px;  
+  height: 325px; 
+}
+
+.books_list1{
+  display: flex;
+  flex-direction: row; 
+  flex-wrap: wrap; 
+}
+
+.book{
+  display: flex;
+  flex-direction: column; 
+  gap: 20px; 
+}
+
+.info1{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;  
+}
+
+.books_list1 img {
+  width: 200px;   
+  height: 325px;  
+  border-radius: 20px;
+}
+
+.books_list1 p{
+  color: #ffffff; 
+}
+
+
+.books_list img {
+  transform: scale(1); 
+  transition: transform 0.3s ease-in-out;
+}
+
+.books_list img:hover {
+transform: scale(1.1); 
+}
+
+.books_list1 img {
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out; 
+}
+
+.books_list1 img:hover {
+transform: scale(1.1); 
+}
+
+
+footer {
+  background-color: #383838;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.container {
+  max-width: 1200px; 
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+    width: 25%; 
+  padding: 10px;
+  box-sizing: border-box; 
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+    font-size: 1.2em; 
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px; 
+}
+
+.footer-section a {
+  color: #fff;
+    text-decoration: none; 
+}
+
+.footer-bottom {
+  text-align: center;
+    margin-top: 20px;
+     padding-top: 10px;
+  border-top: 1px solid #555;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+      width: 50%; 
+    }
+     .footer-section:last-child {
+         width: 100%;
+      }
+    .footer-content {
+      flex-direction: column;
+    }
 }
